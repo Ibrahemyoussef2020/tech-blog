@@ -1,0 +1,126 @@
+/********** cover ***********/
+
+.blog-cover{
+   /* height: calc(100vh - 180px);*/
+    max-height: 800px;
+    min-height: 350px;
+
+    background-image: url(../images/blog-cover.png);
+    background-size: cover;
+    background-position: top center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.blog-cover__intro{
+    padding: 1rem;
+    text-align: center;
+    color: var(--clr-secondary);
+}
+
+.blog-cover__intro h1{
+    font-size:calc(1rem + 2vw);
+    font-weight:900;
+    padding: 0;
+    margin: 0 auto .5rem;
+    text-transform: uppercase;
+    
+}
+
+.blog-cover__intro p{
+    width: 90%; 
+    padding: 0;
+    margin: 0 auto;
+    line-height:1.4;
+}
+
+/************** main *************/
+
+.main-content{
+    width: calc(100% - 40px);
+    margin: auto;
+    color: var(--clr-primary);
+}
+
+.blog-line{
+    border: none;
+    height: 4px;
+    margin: 2rem auto 1rem;
+    width: 100%;
+    background: var(--clr-primary);
+}
+
+.blog-line:first-child{
+    margin-bottom: 3rem;
+}
+
+.technologies__title{
+    margin-left: -10px;
+   font-size:calc(1.2rem + 1vh); 
+   font-weight:600;
+   text-transform: uppercase;
+   color: #232831;
+}
+
+
+.technology__title{
+    font-size: 1.57rem;
+    font-weight:600;
+    margin-top: 1rem;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.technology__desc{
+    line-height: 1.7;
+    color: var(--clr-primary);
+    text-transform: capitalize;
+}
+
+.technology__desc::first-letter{
+    margin-left:3rem;
+}
+
+/** refs **/
+
+.references__title{
+    font-size: 1.57rem;
+    text-transform: uppercase;
+}
+
+.references__list{
+    padding-left:3rem;
+    list-style: disc;
+}
+
+.references__list li{
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+}
+
+/*********** media ************/
+
+@media (min-width:767px){
+    .blog-cover__intro{
+        width: 70%;
+        min-width: 600px;
+    }
+    .blog-cover__intro h1{
+        font-size:calc(2rem + 2vw);
+        line-height: 1;
+    }
+
+    .main-content{
+        width: calc(100% - 200px);
+    }
+
+    .technologies__title{
+        font-size:calc(1.5rem + 1vh); 
+        margin-left: -2rem;
+        word-spacing: 10px;
+    }
+}
+
