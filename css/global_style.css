@@ -1,0 +1,47 @@
+:root{
+    --clr-primary:#88675B;
+    --clr-light:#FFF;
+    --clr-dark:#232831;
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.12rem;
+    overflow-x: hidden;
+}
+
+/****** reset elements  ********/
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    padding-inline-start:0;
+}
+
+/*********** framework *********/
+
+.flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.gap-1-2{
+    gap: .5rem;
+}
+
+/******** styles ******/
+
