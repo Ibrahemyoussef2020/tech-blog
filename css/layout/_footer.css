@@ -1,0 +1,26 @@
+.main-footer{
+    padding: 3rem 1rem;
+    text-align: center;
+    color:var(--clr-primary);
+    background: var(--clr-secondary);
+}
+
+.main-footer h2{
+    margin: 0 auto 2rem;
+    font-size: var(--fs-primary);
+    font-weight: 400;
+}
+
+.main-footer .contacts{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 2rem;
+}
+
+.contact__title{
+    font-size:1rem;
+    font-weight:300;
+}

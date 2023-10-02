@@ -44,12 +44,8 @@
 }
 
 .main-header:has(input:checked) ul{
-    transform:scale3d(1,0,1)
+    transform:scale3d(1,1,1)
 } 
-
-
-
-
 
 
 /************** media *************/
@@ -65,14 +61,14 @@
         padding: 1rem;
         background: var(--clr-primary);
         color: var(--clr-light);
-        font-weight:600;
+        font-weight:var(--fw-semi);
         justify-content: space-around;
         align-items: center;
         overflow: hidden;
         transition: transform .3s ease-in-out;
 
         transform-origin: top center;
-        transform: scale3d(1,1,1);
+        transform: scale3d(1,0,1);
         z-index: 2;
     }
 }
